@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malte Cervejaria - Localização</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+        /* ======================================= */
+        /* CSS COMPLETO INTEGRADO (Localização) */
+        /* ======================================= */
+        
+        /* Paleta de Cores (Padrão Malte) */
+        :root {
+            --verde-principal: #38761d; 
+            --verde-claro: #a9d18e;     
+            --cor-fundo-pagina: #f4f4f4;
+            --cor-texto-escuro: #333333;
+            --cor-borda: #dddddd;
+        }
+
+        /* Reset e Layout da Página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--cor-fundo-pagina);
+            box-sizing: border-box; 
+        }
+        
+        /* ======================================= */
+        /* TOPO (ALINHAMENTO CORRIGIDO) */
+        /* ======================================= */
+        /* Note: Substituí "text-align" por "topo-catalogo-container" e adicionei o botão de volta no Flexbox. */
+        .topo-catalogo-container {
+            display: flex;
+            align-items: center; 
+            justify-content: space-between; /* Alinha logo e botão nas extremidades */
+            padding: 15px 40px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #eee;
+        }
+        .grupo-esquerda {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .grupo-esquerda img { height: 60px; }
+        .titulo-malte { color: brown; margin: 0; font-size: 2em; }
+        .btn-voltar-topo {
+            background-color: black; color: white; padding: 8px 20px; 
+            text-decoration: none; border-radius: 5px; font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .btn-voltar-topo:hover {
+            background-color: #333;
+        }
+        
+        /* ======================================= */
+        /* BLOCO DE LOCALIZAÇÃO (Centralizado) */
+        /* ======================================= */
+        
+        /* Wrapper para centralizar o bloco do mapa */
+        .conteudo-principal-wrapper {
+            display: flex;
+            justify-content: center;
+            padding: 40px 10px;
+        }
+
+        .localizacao-bloco {
+            max-width: 500px;
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px 25px;
+            border-radius: 8px;
+            text-align: center; /* Centraliza o título */
+        }
+
+        .localizacao-bloco h1 {
+            color: var(--verde-principal);
+            font-size: 1.8em;
+            margin-top: 0;
+            margin-bottom: 25px;
+            border-bottom: 2px solid var(--verde-claro);
+            padding-bottom: 10px;
+        }
+
+        .localizacao-bloco img {
+            width: 100%; /* Garante que o mapa preencha a largura do bloco */
+            height: auto;
+            border-radius: 6px;
+            border: 2px solid var(--cor-borda);
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .texto-endereco {
+            font-size: 1em;
+            color: var(--cor-texto-escuro);
+            line-height: 1.5;
+            margin-top: 15px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="topo-catalogo-container">
+        <div class="grupo-esquerda">
+            <img src="albio.png" alt="Logo da Cervejaria">
+            <h1 class="titulo-malte">Malte</h1>
+        </div>
+        <a href="index.html" class="btn-voltar-topo">Voltar</a>
+    </div>
+
+    <div class="conteudo-principal-wrapper">
+
+        <div class="localizacao-bloco">
+            
+            <i class="fas fa-map-marker-alt" style="color: var(--verde-principal); font-size: 1.5em; margin-right: 10px;"></i>
+            <h1>Localização da Cervejaria</h1>
+            
+            <img src="capppppp45.png" alt="Mapa da Localização">
+
+            <div class="texto-endereco">
+                **Endereço:** Rua das Cervejas, 123 - Centro<br>
+                **Cidade:** Sua Cidade/UF
+            </div>
+            
+        </div>
+        
+    </div>
+    
+</body>
+</html>

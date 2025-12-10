@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Produto - Malte</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+        /* ======================================= */
+        /* CSS COMPLETO INTEGRADO (Final e Corrigido) */
+        /* ======================================= */
+        
+        /* Paleta de Cores (Mantendo o Padrão Malte) */
+        :root {
+            --verde-principal: #38761d; 
+            --verde-claro: #a9d18e;     
+            --cor-fundo-pagina: #f4f4f4;
+            --cor-texto-escuro: #333333;
+            --cor-borda: #dddddd;
+            --cor-estrela: gold; 
+        }
+
+        /* Reset e Layout da Página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--cor-fundo-pagina);
+            box-sizing: border-box; 
+        }
+        
+        /* ======================================= */
+        /* ** REGRA DE REMOÇÃO FORÇADA DE CONTEÚDO ANTIGO ** */
+        /* ======================================= */
+        /* Se você sabe qual é a classe ou ID do bloco que está por cima (ex: .bloco-antigo-avaliacao),
+           substitua o seletor abaixo. Se o bloco antigo for o primeiro div dentro do body (depois do topo), 
+           esta regra pode ajudar a escondê-lo. */
+        .bloco-avaliacao-antigo {
+            /* Tenta ocultar o bloco que está causando sobreposição */
+            display: none !important; 
+        }
+        /* Tenta ocultar elementos suspeitos que possam estar por cima */
+        .avaliacoes-dos-nossos-clientes-container {
+             display: none !important;
+        }
+
+        /* ======================================= */
+        /* TOPO (MANTIDO) */
+        /* ======================================= */
+        .topo-catalogo-container {
+            display: flex;
+            align-items: center; 
+            justify-content: space-between; 
+            padding: 15px 40px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #eee;
+        }
+        .grupo-esquerda { display: flex; align-items: center; gap: 15px; }
+        .grupo-esquerda img { height: 60px; }
+        .titulo-malte { color: brown; margin: 0; font-size: 2em; }
+        .btn-voltar-topo {
+            background-color: black; color: white; padding: 8px 20px; 
+            text-decoration: none; border-radius: 5px; font-weight: bold;
+        }
+        
+        /* ======================================= */
+        /* BLOCO DE AVALIAÇÃO (CENTRALIZADO) */
+        /* ======================================= */
+        
+        .conteudo-principal-wrapper {
+            max-width: 500px; 
+            margin: 40px auto; 
+            padding: 0 10px;
+        }
+        
+        .img-central {
+            display: block;
+            margin: 0 auto 20px; 
+            max-width: 150px; 
+            height: auto;
+        }
+
+        .avaliacao-container {
+            background-color: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px 25px;
+            border-radius: 8px;
+        }
+        
+        .titulo-avaliacao {
+            text-align: center;
+            color: var(--verde-principal);
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--verde-claro);
+            padding-bottom: 10px;
+        }
+
+        /* Estrelas e Formulário (mantido do código anterior) */
+        .rating-secao { text-align: center; margin-bottom: 30px; }
+        .rating-secao label { font-size: 1.1em; color: var(--cor-texto-escuro); display: block; margin-bottom: 10px; }
+        .estrelas {
+            font-size: 2.5em; color: var(--cor-estrela); cursor: pointer;
+            direction: rtl; unicode-bidi: bidi-override; display: inline-block; 
+        }
+        .estrelas > * { direction: ltr; }
+        .estrelas input[type="radio"] { display: none; }
+        .estrelas label { color: #ccc; transition: color 0.2s; padding: 0 3px; }
+        .estrelas label:hover, .estrelas label:hover ~ label, .estrelas input[type="radio"]:checked ~ label { color: var(--cor-estrela); }
+        
+        .campo-form { margin-bottom: 20px; }
+        .campo-form label { font-weight: bold; display: block; margin-bottom: 8px; color: var(--cor-texto-escuro); }
+        .input-text, textarea {
+            width: 100%; padding: 10px; border: 1px solid var(--cor-borda);
+            border-radius: 5px; box-sizing: border-box; font-family: Arial, sans-serif;
+        }
+        .btn-enviar-avaliacao {
+            width: 100%; background-color: var(--verde-principal); color: white;
+            padding: 15px; border: none; border-radius: 5px; font-size: 1.1em;
+            font-weight: bold; cursor: pointer; transition: background-color 0.3s; margin-top: 10px;
+        }
+        .btn-enviar-avaliacao:hover { background-color: #2e6618; }
+    </style>
+</head>
+<body>
+    
+    <div class="topo-catalogo-container">
+        <div class="grupo-esquerda">
+            <img src="albio.png" alt="Logo Cervejaria">
+            <h1 class="titulo-malte">Malte</h1>
+        </div>
+        <a href="index2.html" class="btn-voltar-topo">Voltar</a>
+    </div>
+
+    <div class="conteudo-principal-wrapper">
+
+        <img src="ding1.png" alt="Cerveja em Destaque" class="img-central">
+
+        <div class="avaliacao-container">
+            <h1 class="titulo-avaliacao">Avalie sua Experiência Malte</h1>
+            
+            <form action="#" method="post">
+                
+                <div class="rating-secao">
+                    <label>Qual a sua nota para o sabor?</label>
+                    <div class="estrelas">
+                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Excelente">★</label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Muito Bom">★</label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Bom">★</label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Razoável">★</label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Ruim">★</label>
+                    </div>
+                </div>
+
+                <div class="campo-form">
+                    <label for="cerveja_avaliada">Qual cerveja você está avaliando?</label>
+                    <input type="text" id="cerveja_avaliada" name="cerveja_avaliada" class="input-text" placeholder="Ex: Pale Ale, Pilsen, etc." required>
+                </div>
+
+                <div class="campo-form">
+                    <label for="feedback">Seu Feedback (Opcional)</label>
+                    <textarea id="feedback" name="feedback" rows="4" placeholder="Conte-nos o que achou da cerveja e da sua experiência..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar-avaliacao">Enviar Avaliação</button>
+            </form>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

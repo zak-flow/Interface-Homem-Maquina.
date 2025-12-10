@@ -1,0 +1,2088 @@
+/* Configurações Gerais da Página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+/* 1. Alinhamento do Cabeçalho (Logo e Nome Malte) */
+.text-align {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.text-align img {
+    height: 80px;
+    width: auto;
+}
+
+.titulo-malte {
+    color: brown;
+    margin: 0;
+}
+
+/* 2. Títulos */
+h1 {
+    text-align: left;
+}
+
+/* --- CENTRALIZAÇÃO DO TÍTULO --- */
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+/* 3. Parágrafo de Descrição */
+.descricao {
+    text-align: justify;
+    max-width: 800px;
+    color: #333;
+}
+
+/* 4. Imagem Principal das Cervejas */
+.imagem-principal {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 30px 0;
+}
+
+/* 5. Galeria "Nossa História" (3 Colunas) */
+.galeria-fotos {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.item-historia {
+    flex: 1;
+    text-align: left;
+}
+
+.item-historia img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.item-historia p {
+    margin: 5px 0;
+}
+/* Centraliza o título */
+.titulo-sessao {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Container que coloca os dois lados juntos */
+.container-produtos {
+    display: flex;                /* Ativa o modo lado a lado */
+    justify-content: space-between; /* Texto na esquerda, imagem na direita */
+    align-items: center;          /* Alinha o centro do texto com o centro da imagem */
+    gap: 40px;                    /* Espaço entre o texto e a imagem */
+    max-width: 1000px;            /* Limita a largura para não espalhar demais */
+    margin: 0 auto;               /* Centraliza a seção inteira na tela */
+    padding: 20px;
+}
+
+/* Coluna dos textos */
+.coluna-textos {
+    flex: 1;                      /* Faz o texto ocupar o espaço da esquerda */
+}
+
+.item-produto {
+    margin-bottom: 30px;          /* Espaço entre cada par de parágrafos */
+}
+
+/* Coluna da Imagem */
+.coluna-imagem {
+    flex: 1;                      /* Faz a imagem ocupar o espaço da direita */
+}
+
+.coluna-imagem img {
+    width: 100%;                  /* A imagem se ajusta à largura da coluna */
+    height: auto;
+    border-radius: 12px;          /* Cantos arredondados profissionais */
+    display: block;
+}
+/* Container que coloca os dois projetos lado a lado */
+.container-projetos {
+    display: flex;         /* Ativa o modo lado a lado */
+    gap: 30px;             /* Espaço entre os dois projetos */
+    justify-content: center; /* Centraliza os projetos na tela */
+    margin-top: 20px;
+}
+
+/* Cada bloco de projeto (imagem + texto) */
+.projeto-item {
+    flex: 1;               /* Faz os dois projetos terem a mesma largura */
+    max-width: 450px;      /* Limita a largura para não esticar demais */
+    text-align: left;      /* Alinha o texto à esquerda embaixo da foto */
+}
+
+/* Ajusta as imagens para ocuparem toda a largura da coluna */
+.projeto-item img {
+    width: 100%;           
+    height: auto;          /* Mantém a proporção da foto */
+    border-radius: 10px;   /* Arredonda os cantos (opcional) */
+    margin-bottom: 15px;   /* Espaço entre a foto e o texto */
+}
+
+/* Estilo para os títulos em negrito */
+.projeto-item p strong {
+    font-size: 1.1em;
+    color: #333;
+}
+.container-avaliacoes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.card-avaliacao {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Cria a sombra do cartão */
+    border: 1px solid #ddd;
+}
+
+.estrelas {
+    color: gold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card-avaliacao p strong {
+    color: brown;
+    display: block;
+    margin-bottom: 5px;
+}
+/* Container dos ícones */
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+/* Estilo individual do ícone */
+.icone-link {
+    font-size: 35px;       /* Tamanho do ícone */
+    color: #333;           /* Cor inicial */
+    text-decoration: none;
+    transition: transform 0.3s, color 0.3s; /* Animação suave */
+}
+
+/* Efeito ao passar o mouse */
+.icone-link:hover {
+    color: brown;          /* Muda para a cor da sua marca */
+    transform: scale(1.2); /* Aumenta um pouco de tamanho */
+}
+.btn-saiba-mais {
+    display: inline-block;    /* Permite dar largura e altura ao link */
+    background-color: black;  /* Fundo preto */
+    color: white;             /* Texto branco */
+    padding: 12px 25px;       /* Espaçamento interno do botão */
+    text-decoration: none;    /* Remove o sublinhado azul de link */
+    border-radius: 5px;       /* Arredonda levemente os cantos */
+    font-weight: bold;
+    margin-top: 15px;         /* Espaço entre o texto e o botão */
+    transition: background-color 0.3s; /* Animação suave */
+}
+
+.btn-saiba-mais:hover {
+    background-color: #333;   /* Muda para cinza escuro ao passar o mouse */
+}
+/* Container Principal (A caixa escura) */
+.secao-catalogo {
+    background-color: black;
+    color: white;
+    padding: 60px 40px;
+    max-width: 950px;
+    margin: 40px auto; /* Centraliza a caixa preta na página branca */
+    border-radius: 15px;
+}
+
+/* Alinhamento da Logo + Nome Malte à ESQUERDA */
+.topo-catalogo-container {
+    display: flex;
+    align-items: center;  /* Alinha a altura do texto com o logo */
+    gap: 15px;            /* Espaço entre logo e nome */
+    margin-bottom: 50px;  /* Espaço para separar do conteúdo de baixo */
+    justify-content: flex-start; /* GARANTE O ALINHAMENTO À ESQUERDA */
+}
+
+/* Estilo do Nome Malte */
+.titulo-malte {
+    color: #ff4d4d;       /* Cor de destaque */
+    margin: 0;
+    font-size: 2.2em;
+}
+
+.topo-catalogo-container img {
+    height: 70px;
+    width: auto;
+}
+
+/* --- BLOCO CENTRALIZADO (O resto da página) --- */
+.conteudo-centralizado {
+    text-align: center;   /* Centraliza tudo que estiver aqui dentro */
+}
+
+.titulo-catalogo {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.descricao-catalogo {
+    max-width: 750px;     /* Para o parágrafo não ficar muito largo */
+    margin: 0 auto;       /* Centraliza o bloco do parágrafo */
+    font-size: 1.1em;
+    color: #cccccc;
+    line-height: 1.8;
+}
+/* Centraliza apenas o botão */
+.navegacao-topo {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.btn-voltar {
+    background-color: black;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Espalha os textos para os lados */
+.container-lado-a-lado {
+    display: flex;
+    justify-content: space-between; /* Texto 1 cola na esquerda, Texto 2 cola na direita */
+    max-width: 1400px;              /* Aumentei para os textos terem mais espaço lateral */
+    margin: 0 auto;                 /* Centraliza a caixa total na tela branca */
+    gap: 100px;                     /* Aumenta o vazio entre os dois blocos */
+    padding: 0 40px;                /* Garante que não encoste na borda física da tela */
+}
+
+.coluna-experiencia {
+    flex: 1;
+    text-align: left;               /* Garante o texto alinhado à esquerda */
+}
+
+.coluna-experiencia h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.coluna-experiencia p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.coluna-experiencia img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: white;
+}
+
+/* Botão de Voltar */
+.navegacao-topo {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.btn-voltar {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Títulos */
+.titulo-sessao {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Grade de Cervejas */
+.grade-cervejas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Coluna Esquerda: Cerveja Vermelha Menor */
+.coluna-vermelha img {
+    width: 100%;
+    max-width: 200px; /* Tamanho reduzido conforme pedido */
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Coluna Direita: Empilhamento */
+.coluna-direita-empilhada {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.item-cerveja-pequeno img {
+    width: 100%;
+    max-width: 180px; /* Proporcionalmente menor */
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Seção Novidades */
+.secao-novidades {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.grade-oportunidades {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.info {
+    flex: 1;
+    text-align: left;
+}
+/* Container da Sessão de Novidades */
+.secao-novidades {
+    background-color: #f4f4f4; /* Fundo cinza claro para destacar */
+    padding: 60px 20px;
+    margin-top: 60px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.secao-novidades h2 {
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+/* Grade Flexível */
+.grade-oportunidades {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 50px;
+    text-align: left; /* Garante que os textos informativos fiquem na esquerda */
+}
+
+/* Coluna de Informações (Esquerda) */
+.coluna-info {
+    flex: 2; /* Ocupa mais espaço */
+}
+
+.item-novidade {
+    margin-bottom: 30px;
+}
+
+.item-novidade p strong {
+    font-size: 1.2em;
+    color: brown;
+}
+
+/* Coluna de E-mail (Direita) */
+.coluna-email {
+    flex: 1; /* Ocupa menos espaço */
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center; /* Centraliza o botão de inscrição */
+}
+
+.btn-preto {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn-preto:hover {
+    background-color: #333;
+}
+.btn-sabores {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Espaço entre o botão e a imagem abaixo */
+    transition: 0.3s;
+}
+
+.btn-sabores:hover {
+    background-color: brown;
+}
+/* Container que coloca a imagem e o texto na mesma linha */
+.topo-catalogo-container {
+    display: flex !important;
+    align-items: center !important; /* Alinha o texto na altura da logo */
+    gap: 15px !important;           /* Espaço entre a logo e o nome */
+    margin-bottom: 30px;
+}
+
+/* Estilo do texto Malte */
+.titulo-malte {
+    color: red !important;          /* Cor vermelha obrigatória */
+    margin: 0 !important;           /* Remove espaços que desalinhariam */
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Tamanho da logo para combinar com o texto */
+.topo-catalogo-container img {
+    height: 70px;
+    width: auto;
+}
+/* Centraliza a imagem que está sozinha no HTML */
+body > img {
+    display: block !important;    /* Transforma a imagem em bloco */
+    margin-left: auto !important;  /* Margem automática na esquerda */
+    margin-right: auto !important; /* Margem automática na direita */
+    max-width: 100%;               /* Garante que ela não estoure a tela */
+    height: auto;                  /* Mantém a proporção */
+    margin-top: 20px;              /* Espaço entre o topo e a imagem */
+}
+
+/* Mantém o estilo do topo que você já tem */
+.topo-catalogo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.titulo-malte {
+    color: red;
+    font-size: 2.5em;
+}
+/* Container principal que separa os dois lados (Esquerda e Direita) */
+.topo-catalogo-container {
+    display: flex !important;
+    justify-content: space-between !important; /* Afasta o grupo da esquerda do botão da direita */
+    align-items: center !important;
+    width: 100% !important;
+    padding: 10px 20px;
+    box-sizing: border-box; /* Garante que o preenchimento não quebre a largura */
+}
+
+/* Agrupamento que "gruda" a logo e o nome Malte na esquerda */
+.grupo-esquerda {
+    display: flex !important;
+    align-items: center !important; /* Alinha o texto na altura central da imagem */
+    gap: 15px !important;           /* Espaço entre a logo e o texto */
+    margin: 0 !important;           /* Remove margens que podem centralizar o bloco */
+}
+
+/* Estilização do Nome Malte */
+.titulo-malte {
+    color: red !important;          /* Define a cor vermelha solicitada */
+    font-size: 2.5em;
+    margin: 0 !important;           /* Remove margens padrão que desalinhariam o topo */
+    font-weight: bold;
+    text-align: left !important;
+}
+
+/* Tamanho da logo para combinar com o título */
+.grupo-esquerda img {
+    height: 70px;
+    width: auto;
+}
+
+/* Estilo do Botão Voltar na extremidade direita */
+.btn-voltar-topo {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+/* Container dos botões com o espaço solicitado */
+.grupo-botoes {
+    display: flex;
+    gap: 30px;            /* Aumentei para 30px para dar um bom espaço */
+    margin: 20px 0;
+}
+
+/* Estilo base (Botão Sabores: Preto com letra branca) */
+.btn-estilo {
+    display: inline-block;
+    background-color: black;
+    color: white;         /* Letra branca por padrão */
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* BOTÃO AVALIAÇÃO: Fundo cinza e letra preta */
+.btn-cinza {
+    background-color: #cccccc; /* Cinza claro */
+    color: black !important;   /* Letra preta obrigatória */
+}
+
+/* Efeito ao passar o mouse */
+.btn-estilo:hover {
+    filter: brightness(0.9);
+    transform: translateY(-2px);
+}
+/* Container que separa os dois lados da tela */
+.topo-catalogo-container {
+    display: flex !important;
+    justify-content: space-between !important; /* EMPURRA PARA AS PONTAS */
+    align-items: center !important;
+    width: 100% !important;
+    padding: 10px 40px; /* Espaço nas laterais para não encostar na borda */
+    box-sizing: border-box;
+}
+
+/* Mantém a logo e o texto Malte juntos na esquerda */
+.grupo-esquerda {
+    display: flex !important;
+    align-items: center !important;
+    gap: 15px;
+}
+
+/* Estilo do Nome Malte */
+.titulo-malte {
+    color: red !important;
+    margin: 0 !important;
+    font-size: 2.5em;
+}
+
+/* Estilo do Botão Voltar (Direita) */
+.btn-voltar-topo {
+    background-color: black;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-voltar-topo:hover {
+    background-color: #333;
+}
+
+/* Centralização da sua imagem do meio */
+.img-central {
+    display: block !important;
+    margin: 40px auto !important;
+    max-width: 400px; /* Ajuste o tamanho da imagem se precisar */
+    height: auto;
+}
+/* Isso obriga o botão a sair do lado das fotos e ir para baixo */
+.container-botao-historia {
+    clear: both !important;         /* LIMPA O LAYOUT: obriga o botão a ir para baixo */
+    display: block !important;      /* Faz a div ocupar a linha toda */
+    text-align: center !important;  /* Centraliza o botão horizontalmente */
+    width: 100% !important;
+    padding-top: 50px !important;   /* Dá um espaço para não grudar nas fotos */
+    padding-bottom: 20px !important;
+}
+
+/* Estilo do botão "Saiba Mais" */
+.btn-preto {
+    background-color: black !important;
+    color: white !important;
+    padding: 15px 40px !important;
+    text-decoration: none !important;
+    border-radius: 5px !important;
+    font-weight: bold !important;
+    display: inline-block !important; 
+    transition: 0.3s;
+}
+
+.btn-preto:hover {
+    background-color: #333 !important;
+}
+/* Container que coloca os itens lado a lado */
+.historia-container {
+    display: flex;         /* Alinhamento horizontal */
+    align-items: center;   /* Centraliza o texto verticalmente com a imagem */
+    gap: 30px;             /* Espaço entre a imagem e o texto */
+    margin: 40px auto;     /* Centraliza o bloco na página */
+    max-width: 900px;      /* Limita a largura para ficar legível */
+    padding: 20px;
+}
+
+/* Tamanho da imagem */
+.img-historia {
+    width: 300px;          /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    border-radius: 10px;   /* Cantos arredondados */
+}
+
+/* Estilo do texto */
+.texto-historia {
+    font-size: 1.3em;
+    line-height: 1.6;      /* Espaçamento entre as linhas */
+    color: #333;
+    font-style: italic;    /* Deixa em itálico como estava na imagem */
+}
+
+/* Responsividade: em celulares, coloca um embaixo do outro */
+@media (max-width: 600px) {
+    .historia-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* Container que controla o bloco de texto principal */
+.texto-principal {
+    max-width: 900px !important;    /* Limita o texto para 900px, melhorando a leitura */
+    margin: 40px auto !important;   /* Centraliza o bloco na página */
+    
+    /* ADICIONA ESPAÇO INTERNO NAS BORDAS LATERAIS */
+    padding: 0 40px !important;     /* 40px de espaço nas bordas laterais! */
+}
+
+/* Formatação dos Parágrafos (P) */
+.texto-principal p {
+    font-size: 1.2em !important;
+    line-height: 1.8 !important; 
+    color: #333 !important;
+    margin-bottom: 25px !important;
+    
+    /* ALINHAMENTO NAS DUAS MARGENS */
+    text-align: justify !important; 
+}
+/* Container que controla o bloco de texto principal */
+.texto-principal {
+    /* Força uma largura máxima para que as margens laterais fiquem visíveis */
+    max-width: 900px !important;    
+    
+    /* Centraliza o bloco na página (essencial com max-width) */
+    margin: 40px auto !important;   
+    
+    /* AUMENTA E FORÇA O ESPAÇAMENTO NAS LATERAIS */
+    padding: 0 60px !important;     /* 60px de espaço interno nas laterais */
+}
+
+/* Formatação dos Parágrafos (P) */
+.texto-principal p {
+    font-size: 1.2em !important;
+    line-height: 1.8 !important; 
+    color: #333 !important;
+    margin-bottom: 25px !important;
+    
+    /* GARANTE O ALINHAMENTO NAS DUAS MARGENS */
+    text-align: justify !important; 
+}
+
+/* AVISO: Se você tiver um <body> ou <html> com 'overflow: hidden' ou 'margin: 0', isso pode atrapalhar. */
+/* Se as margens ainda não aparecerem, adicione este código ao topo do seu style.css: */
+body {
+    padding: 0 10px;
+}
+/* PASSO 1: CRIA ESPAÇO FORA, EM TODA A PÁGINA */
+body {
+    /* Define uma margem nas laterais para afastar TODO o conteúdo das bordas da tela */
+    margin: 0 40px !important; 
+    padding: 0 !important;
+}
+
+/* PASSO 2: CONTROLA O BLOCO DE TEXTO */
+.texto-principal {
+    /* Volta a largura máxima para que o texto fique centralizado dentro do novo espaço do body */
+    max-width: 900px !important;    
+    
+    /* Centraliza o bloco na página, respeitando as margens do body */
+    margin: 40px auto !important;   
+    
+    /* Remove o padding lateral, pois o margin do body já criou o espaço */
+    padding: 0 !important; 
+}
+
+/* Formatação dos Parágrafos (P) */
+.texto-principal p {
+    font-size: 1.2em !important;
+    line-height: 1.8 !important; 
+    color: #333 !important;
+    margin-bottom: 25px !important;
+    
+    /* Garante o alinhamento justificado */
+    text-align: justify !important; 
+}
+/* Container que centraliza o botão */
+.container-botao-final-historia {
+    display: block !important;
+    text-align: center !important;
+    padding: 30px 0 !important; /* Espaço acima e abaixo do botão */
+    width: 100% !important;
+}
+
+/* Estilo do Botão "Continue Lendo" (Preto) */
+.btn-continue-lendo {
+    background-color: black !important;
+    color: white !important;
+    padding: 12px 30px !important;
+    text-decoration: none !important;
+    border-radius: 5px !important;
+    font-weight: bold !important;
+    display: inline-block !important;
+    transition: 0.3s;
+}
+
+.btn-continue-lendo:hover {
+    background-color: #333 !important;
+}
+/* Container que centraliza o conteúdo da seção de posts */
+.container-posts {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* Estilo geral para cada bloco de postagem */
+.post-item {
+    margin-bottom: 40px;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Tag de destaque (a primeira linha) */
+.tag-destaque {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+/* Títulos dos posts */
+.post-item h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+/* Títulos da lista interna */
+.topico h3 {
+    font-size: 1.2em;
+    color: black;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.topico h4 {
+    font-size: 1em;
+    color: #555;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+/* Parágrafos internos */
+.post-item p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+/* PASSO 1: Configura o BODY para que o position: absolute funcione corretamente */
+body {
+    position: relative; /* Define o body como ponto de referência para o botão flutuante */
+    margin: 0 40px !important; /* Margem lateral para todo o conteúdo */
+    padding: 0 !important;
+}
+
+/* PASSO 2: Agrupamento da logo e do texto Malte na Esquerda */
+.text-align {
+    display: flex !important;
+    align-items: center !important;
+    gap: 15px; /* Espaço entre a logo e o texto */
+    
+    /* Espaçamento para o conteúdo abaixo não ir para o lado do botão flutuante */
+    padding-right: 150px; 
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* Estilo do Nome Malte */
+.titulo-malte {
+    color: red !important;
+    margin: 0 !important;
+    font-size: 2.5em;
+}
+
+/* PASSO 3: BOTÃO DE VOLTAR - POSICIONAMENTO ABSOLUTO */
+.btn-voltar-topo {
+    position: absolute;      /* Tira o botão do fluxo normal e permite que ele flutue */
+    top: 25px;               /* Distância do topo da página */
+    right: 40px;             /* Distância da borda direita da página */
+    
+    /* Estilos visuais do botão */
+    background-color: black;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+    z-index: 1000;           /* Garante que o botão fique visível sobre tudo */
+}
+
+.btn-voltar-topo:hover {
+    background-color: #333;
+}
+/* Container que centraliza os dois botões */
+.container-botoes-produtos {
+    text-align: center;
+    margin-top: 40px;      /* Espaço acima dos botões, separando-os dos produtos */
+    margin-bottom: 60px;
+}
+
+/* Estilo Base para Todos os Botões */
+.container-botoes-produtos a {
+    display: inline-block;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0 10px;        /* Espaço entre os dois botões */
+    transition: background-color 0.3s ease;
+}
+
+/* 1. Botão Localização (Preto) */
+.btn-localizacao {
+    background-color: black;
+    color: white;
+}
+
+.btn-localizacao:hover {
+    background-color: #333;
+}
+
+/* 2. Botão Sabores (Cinza) */
+.btn-sabores {
+    background-color: #cccccc; /* Cinza claro */
+    color: black;
+    border: 1px solid #aaa;
+}
+
+.btn-sabores:hover {
+    background-color: #b0b0b0; /* Cinza um pouco mais escuro no hover */
+}
+/* Container que ALINHA Logo e Título na mesma linha */
+.topo-catalogo-container {
+    display: flex !important; /* Faz os filhos (img e h1) ficarem lado a lado */
+    align-items: center !important; /* Alinha a Logo e o Título no meio verticalmente */
+    
+    /* Configuração para o Layout: */
+    justify-content: flex-start !important; /* Mantém os itens juntos na esquerda */
+    gap: 15px !important; /* Espaço entre a Logo e o Título Malte */
+    
+    /* Espaçamento geral do topo */
+    width: 100% !important;
+    padding: 15px 40px !important; 
+    box-sizing: border-box;
+}
+
+/* Estilo do Título Malte (Garantindo que não haja margem extra) */
+.titulo-malte {
+    margin: 0 !important; /* Remove qualquer margem padrão que possa empurrar a Logo */
+    /* ... outros estilos de fonte/cor ... */
+}
+/* ========================================================== */
+/* CSS COMPLETO E GARANTIDO - (Baseado no seu último HTML)    */
+/* ========================================================== */
+
+/* 1. RESET BÁSICO (Para garantir que o conteúdo fique no topo) */
+body {
+    margin: 0 !important;   
+    padding: 0 !important;
+}
+
+/* 2. CONTAINER PRINCIPAL: SEPARA NAS PONTAS (ESQUERDA vs. DIREITA) */
+.redes-e-contato-container {
+    display: flex !important;
+    align-items: center !important; 
+    justify-content: space-between !important; /* EMPURRA OS GRUPOS PARA AS PONTAS */
+    width: 100% !important; 
+    padding: 30px 40px !important; /* ESPAÇO INTERNO NAS LATERAIS */
+    margin-bottom: 60px !important; /* ESPAÇO ABAIXO DO BLOCO */
+}
+
+/* 3. GRUPO ESQUERDA: ALINHA O TÍTULO E O BOTÃO LADO A LADO */
+.grupo-contato-esquerda {
+    display: flex !important; /* SOLUÇÃO: FORÇA O H2 E O BOTÃO A FICAREM EM LINHA */
+    align-items: center !important;
+    gap: 20px !important; /* Espaço entre o título e o botão */
+}
+
+/* 4. CORREÇÃO AGRESSIVA PARA O H2 (Garante que ele não quebre a linha) */
+.titulo-contato {
+    margin: 0 !important; /* Remove margem padrão */
+    display: inline-block !important; /* Garante que o H2 obedeça ao Flexbox */
+    font-size: 1.5em !important; 
+    font-weight: bold !important;
+}
+
+/* 5. ÍCONES (Alinha os ícones entre si) */
+.redes-sociais {
+    display: flex !important;
+    gap: 15px !important; 
+}
+
+/* 6. ESTILOS VISUAIS (Para o botão) */
+.btn-contato {
+    background-color: black;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn-contato:hover {
+    background-color: #333;
+}
+
+/* 7. ESTILOS VISUAIS (Para os ícones) */
+.icone-link {
+    font-size: 1.5em;
+    color: #555;
+    transition: color 0.3s;
+}
+.icone-link:hover {
+    color: black;
+}
+/* ========================================================== */
+/* SOLUÇÃO FINAL PARA ESPAÇO NO FUNDO E ALINHAMENTO LADO A LADO */
+/* ========================================================== */
+
+/* 1. RESET AGRESSIVO (Garante que a margem funcione na parte inferior) */
+html, body {
+    height: 100%; /* Permite que o body se expanda */
+    min-height: 100vh; /* Garante que o body ocupe toda a tela */
+    margin: 0 !important;   
+    padding: 0 !important;
+}
+
+/* 2. CONTAINER PRINCIPAL: SEPARA NAS PONTAS */
+.redes-e-contato-container {
+    display: flex !important;
+    align-items: center !important; 
+    justify-content: space-between !important; 
+    width: 100% !important; 
+    padding: 30px 40px !important; 
+    
+    /* === AUMENTO MÁXIMO DO ESPAÇO ABAIXO === */
+    margin-bottom: 200px !important; /* Valor muito alto para garantir o espaço! */
+}
+
+/* 3. GRUPO ESQUERDA: ALINHA O TÍTULO E O BOTÃO LADO A LADO */
+.grupo-contato-esquerda {
+    display: flex !important; 
+    align-items: center !important;
+    gap: 20px !important;
+}
+
+/* 4. CORREÇÃO AGRESSIVA PARA O H2 */
+.titulo-contato {
+    margin: 0 !important;
+    display: inline-block !important; 
+    font-size: 1.5em !important; 
+    font-weight: bold !important;
+}
+
+/* 5. ÍCONES */
+.redes-sociais {
+    display: flex !important;
+    gap: 15px !important; 
+}
+
+/* 6. ESTILOS VISUAIS */
+.btn-contato {
+    background-color: black;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.icone-link {
+    font-size: 1.5em;
+    color: #555;
+    transition: color 0.3s;
+}
+/* Container que ALINHA o TÍTULO e o BOTÃO LADO A LADO */
+.grupo-contato-esquerda {
+    display: flex !important;      /* Faz o H2 e o Botão ficarem na mesma linha */
+    align-items: center !important; /* Centraliza verticalmente o texto com o botão */
+    gap: 20px !important;          /* Espaço entre o título e o botão */
+}
+
+/* Garante que o H2 não tenha margem padrão que atrapalhe o alinhamento */
+.titulo-contato {
+    margin: 0 !important;
+    font-size: 1.5em; /* Ou o tamanho que você preferir */
+}
+
+/* Container Principal (Apenas para garantir a separação nas pontas) */
+.redes-e-contato-container {
+    display: flex !important;
+    justify-content: space-between !important; /* Empurra o grupo esquerdo e as redes direitas */
+    align-items: center !important;
+    width: 100% !important;
+    padding: 30px 40px !important;
+    margin-bottom: 60px !important; /* ou 200px se quiser mais espaço embaixo */
+}
+/* Container Principal: AGORA ELE EMPILHA! */
+.redes-e-contato-container {
+    display: flex !important;
+    
+    /* === MUDANÇA CRUCIAL: Empilha os elementos um abaixo do outro === */
+    flex-direction: column !important; 
+    
+    /* Centraliza o bloco inteiro (título/botão e ícones) no centro da página */
+    align-items: center !important; 
+    
+    /* Espaço entre o grupo de cima e o grupo de baixo (ícones) */
+    gap: 25px !important; 
+    
+    width: 100% !important; 
+    padding: 30px 40px !important;
+    margin-bottom: 60px !important; 
+}
+
+/* Grupo Esquerda (título/botão): Mantém eles lado a lado */
+.grupo-contato-esquerda {
+    display: flex !important; 
+    align-items: center !important;
+    gap: 20px !important;
+}
+
+/* Ícones: Centraliza os ícones dentro do seu próprio container */
+.redes-sociais {
+    display: flex !important;
+    justify-content: center !important; /* Centraliza os ícones se houver espaço */
+    gap: 15px !important; 
+}
+/* Container que delimita a largura e centraliza o bloco FAQ */
+.faq-container {
+    max-width: 900px; /* Limita a largura para leitura confortável */
+    margin: 40px auto; /* Centraliza a seção FAQ na página */
+    text-align: left !important; /* Força todo o conteúdo interno a alinhar à esquerda */
+    padding: 0 20px; /* Adiciona um respiro nas laterais em telas menores */
+}
+
+/* Título Principal */
+.titulo-faq {
+    text-align: left;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Subtítulo */
+.subtitulo-faq {
+    color: brown;
+    text-align: left;
+    font-size: 1.1em;
+    margin-bottom: 40px; /* Espaço para separar do bloco de perguntas */
+}
+
+/* Bloco de Perguntas */
+.bloco-perguntas p {
+    /* Destaca e separa as perguntas para melhor leitura */
+    margin-bottom: 25px; 
+    line-height: 1.6;
+    text-align: justify; /* Melhora a aparência do corpo da resposta */
+}
+
+/* Título "Fale comigo" */
+.fale-comigo-titulo {
+    text-align: left;
+    font-size: 1.8em;
+    margin-top: 50px; /* Espaço para separar da última resposta */
+    color: black;
+}
+/* Container que centraliza o formulário */
+.container-formulario {
+    max-width: 600px; /* Largura máxima do formulário */
+    margin: 40px auto; /* Centraliza o formulário na página */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Grupo de cada campo (Label + Input) */
+.grupo-campo {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Coloca a label acima do input */
+}
+
+/* Estilo da Label (O texto "Nome", "E-mail", etc.) */
+.grupo-campo label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 1.1em;
+}
+
+/* Estilo dos campos de texto (Input e Textarea) */
+.grupo-campo input[type="text"],
+.grupo-campo input[type="email"],
+.grupo-campo textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box; /* Garante que padding e borda não aumentem a largura total */
+}
+
+/* Estilo da área de texto (Mensagem) */
+.grupo-campo textarea {
+    resize: vertical; /* Permite redimensionar apenas verticalmente */
+}
+
+/* Estilo do Botão "Enviar" */
+.btn-enviar {
+    background-color: black;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%; /* Faz o botão ocupar a largura total do formulário */
+}
+
+.btn-enviar:hover {
+    background-color: #333;
+}
+/* Container que centraliza o formulário */
+.container-formulario {
+    max-width: 600px; /* Largura máxima do formulário */
+    margin: 40px auto; /* Centraliza o formulário na página */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Grupo de cada campo (Label + Input) */
+.grupo-campo {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Coloca a label acima do input */
+}
+
+/* Estilo da Label (O texto "Nome", "E-mail", etc.) */
+.grupo-campo label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 1.1em;
+}
+
+/* Estilo dos campos de texto (Input e Textarea) */
+.grupo-campo input[type="text"],
+.grupo-campo input[type="email"],
+.grupo-campo textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box; /* Garante que padding e borda não aumentem a largura total */
+}
+
+/* Estilo da área de texto (Mensagem) */
+.grupo-campo textarea {
+    resize: vertical; /* Permite redimensionar apenas verticalmente */
+}
+
+/* Estilo do Botão "Enviar" */
+.btn-enviar {
+    background-color: black;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%; /* Faz o botão ocupar a largura total do formulário */
+}
+
+.btn-enviar:hover {
+    background-color: #333;
+}
+
+/* ======================================= */
+/* ESTILOS DOS ÍCONES DE SEGURANÇA ABAIXO */
+/* ======================================= */
+
+.icones-seguranca {
+    text-align: center; /* Centraliza o texto e os ícones */
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #eee; /* Linha sutil para separar do botão Enviar */
+}
+
+.icones-seguranca p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.icone-pequeno {
+    font-size: 1.2em; /* Tamanho discreto */
+    color: #008000; /* Cor verde para segurança */
+    margin: 0 5px;
+}
+
+.fa-cc-visa, .fa-cc-mastercard {
+    color: #333;
+}
+/* Centraliza a tag div que contém a imagem */
+div:last-child { 
+    text-align: center; /* Centraliza a imagem se ela for inline (comum) */
+}
+
+/* Garante que a imagem se comporte como bloco e centralize com margens */
+div:last-child img {
+    display: block; /* Essencial para que margin: auto funcione */
+    margin: 20px auto; /* Centraliza horizontalmente e dá um espaço de 20px em cima e embaixo */
+    max-width: 100%; /* Garante que a imagem não saia da tela em dispositivos móveis */
+    height: auto;
+}
+/* ============================================== */
+/* CSS PARA CENTRALIZAR O TÍTULO "LOCALIZAÇÃO"    */
+/* ============================================== */
+
+/* A regra fundamental: Centraliza TUDO que for texto ou elemento inline dentro deste bloco */
+.localizacao-bloco {
+    text-align: center; 
+    margin-top: 30px; 
+}
+
+/* Garante que o H1 use o alinhamento central */
+.localizacao-bloco h1 {
+    /* O text-align: center do pai (localizacao-bloco) já faz isso, mas essa linha garante. */
+    text-align: center;
+    margin-bottom: 15px; /* Espaço entre o título e o mapa */
+    font-size: 2em; /* Exemplo de tamanho */
+}
+
+/* Garante que o MAPA (a imagem) também esteja centralizado */
+.localizacao-bloco img {
+    display: block; 
+    margin: 15px auto; /* Centraliza horizontalmente o bloco da imagem */
+    max-width: 90%; 
+    height: auto;
+    border: 1px solid #ccc; 
+}
+/* ======================================= */
+/* ESTILOS DE ORGANIZAÇÃO GERAL E TOPP */
+/* ======================================= */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container do Topo (Alinhamento Logo/Botão Voltar) */
+.topo-pagina {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+.grupo-esquerda {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.grupo-esquerda img {
+    height: 60px; /* Ajuste o tamanho da logo */
+}
+
+.titulo-malte {
+    margin: 0;
+    font-size: 2em;
+    color: brown;
+}
+
+.btn-voltar-topo {
+    background-color: black;
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Estilo para Títulos Principais de Seção */
+.titulo-secao {
+    text-align: center;
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Estilo para Containers de Conteúdo (Limita a largura para leitura) */
+.secao-historia, .secao-mvv {
+    max-width: 900px; /* Limita a largura centralizada */
+    margin: 50px auto; /* Centraliza o bloco na página */
+    padding: 0 20px; /* Espaçamento lateral */
+}
+
+
+/* ======================================= */
+/* SEÇÃO HISTÓRIA */
+/* ======================================= */
+
+.historia-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* Permite quebrar em telas pequenas */
+}
+
+.img-historia {
+    width: 35%; /* Ocupa 35% do espaço na horizontal */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.texto-historia-destaque {
+    flex: 1; /* Ocupa o restante do espaço */
+    font-style: italic;
+    font-size: 1.2em;
+    color: brown;
+    padding: 15px;
+    border-left: 3px solid brown; /* Linha de destaque */
+}
+
+.texto-historia-completo {
+    text-align: justify;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.container-botao-final-historia {
+    text-align: center;
+}
+
+.btn-continue-lendo {
+    background-color: brown;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+
+/* ======================================= */
+/* SEÇÃO MVV (MISSÃO, VISÃO, VALORES) */
+/* ======================================= */
+
+.titulo-secao-mvv {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.mvv-bloco {
+    display: flex;
+    justify-content: space-around; /* Distribui os itens uniformemente */
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.mvv-item {
+    flex: 1 1 250px; /* Garante que cada item ocupe no mínimo 250px */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.mvv-titulo {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 5px;
+}
+
+.mvv-texto, .mvv-texto-visao {
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.5;
+}
+/* --- ESTILO PARA O BOTÃO BLOG/NOVIDADES (Adicionar no style.css) --- */
+
+.container-botao-blog {
+    text-align: center; /* Centraliza o botão na página */
+    margin: 40px 0 20px; /* Adiciona margem acima e abaixo */
+    padding: 0 20px;
+}
+
+.btn-blog {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #000000; /* Preto para contraste */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, transform 0.2s;
+    border: 2px solid #000000;
+}
+
+.btn-blog:hover {
+    background-color: #333333; /* Fundo cinza escuro no hover */
+    transform: translateY(-2px);
+}
+/* --- ESTILOS PARA O TOPO À ESQUERDA --- */
+
+/* Contêiner principal do topo */
+.topo-logo-container {
+    /* Usamos Flexbox para controle de layout */
+    display: flex;
+    /* Alinha o conteúdo à esquerda e mantém itens verticalmente centralizados */
+    align-items: center; 
+    justify-content: flex-start; /* Força o conteúdo para o início (esquerda) */
+    
+    padding: 15px 40px; /* Espaçamento interno */
+    background-color: #ffffff; /* Fundo branco ou claro */
+    border-bottom: 1px solid #eee; /* Linha sutil abaixo */
+}
+
+/* Grupo que contém a imagem e o título */
+.grupo-esquerda {
+    display: flex;
+    align-items: center; /* Alinha a imagem e o texto no meio */
+    gap: 15px; /* Espaço entre a imagem e o título */
+}
+
+/* Estilo da Imagem (Logo) */
+.grupo-esquerda img { 
+    height: 60px; /* Tamanho da logo */
+}
+
+/* Estilo do Título (Malte) */
+.titulo-malte { 
+    color: brown; 
+    margin: 0; 
+    font-size: 2em; 
+}
+/* ======================================= */
+/* ESTILOS PARA PÁGINA DE BLOG/ARTIGO */
+/* ======================================= */
+
+/* Container Principal do Conteúdo do Artigo */
+.blog-container {
+    max-width: 800px; /* Largura ideal para leitura de artigo */
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+/* Título do Artigo */
+.titulo-artigo {
+    color: var(--verde-principal); /* Supondo que você use --verde-principal */
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 3px solid var(--verde-claro);
+    padding-bottom: 15px;
+}
+
+/* Estilo para Parágrafos */
+.texto-paragrafo {
+    font-size: 1.05em;
+    line-height: 1.7;
+    color: #444444;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+/* Alinhamento de Imagens Lado a Lado (Flexbox) */
+.bloco-duas-imagens {
+    display: flex;
+    gap: 20px; /* Espaço entre as duas imagens */
+    margin: 30px 0;
+    justify-content: center;
+}
+
+.imagem-blog {
+    width: 48%; /* Cada imagem ocupa quase metade do espaço */
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Garante que a imagem não distorça em telas pequenas */
+    object-fit: cover; 
+}
+
+/* Título de Artigos Relacionados */
+.titulo-relacionados {
+    color: var(--verde-principal);
+    font-size: 1.6em;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/* Grid de Posts Relacionados (Layout 3 Colunas) */
+.posts-relacionados-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 3 colunas em telas maiores */
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.card-post {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    border-top: 5px solid var(--verde-principal); /* Detalhe da cor Malte */
+}
+
+.icone-post {
+    font-size: 2em;
+    color: var(--verde-principal);
+    margin-bottom: 10px;
+}
+
+.card-post h3 {
+    font-size: 1.1em;
+    color: var(--cor-texto-escuro);
+    margin: 0 0 10px;
+}
+
+.link-leia-mais {
+    display: inline-block;
+    color: brown;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Media Query para responsividade das imagens em telas muito pequenas */
+@media (max-width: 600px) {
+    .bloco-duas-imagens {
+        flex-direction: column; /* Empilha as imagens em telas menores */
+    }
+    .imagem-blog {
+        width: 100%;
+    }
+}
+/* ======================================= */
+/* ESTILOS PARA POSTS RELACIONADOS (LAYOUT SIMPLES 3X) */
+/* ======================================= */
+
+.posts-relacionados-triplo-corrigido {
+    display: grid;
+    /* Define 3 colunas iguais em telas maiores */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 30px;
+    max-width: 900px; /* Um pouco mais largo para acomodar 3 colunas */
+    margin: 40px auto 60px;
+    padding: 0 20px;
+}
+
+.card-post-simples {
+    text-align: center; /* Centraliza a imagem e os textos */
+    /* Adicionando um leve padding e borda para dar o charme */
+    padding: 15px; 
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.img-card-relacionado-simples {
+    width: 100%;
+    height: 120px; /* Altura fixa para manter o alinhamento visual */
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+/* Mantendo os estilos de título e autor que já tínhamos para consistência */
+.titulo-card-relacionado {
+    font-size: 1.05em;
+    color: var(--verde-principal);
+    margin: 5px 0;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.autor-card-relacionado {
+    font-size: 0.85em;
+    color: #999;
+    margin: 5px 0 0;
+}
+/* --- CSS para a Imagem Principal e o Texto de Boas-Vindas --- */
+
+/* Novo contêiner para alinhar o texto/botão com a imagem */
+.container-bem-vindo {
+    display: flex; /* Habilita o Flexbox */
+    align-items: center; /* Alinha o conteúdo verticalmente */
+    justify-content: center; /* Centraliza horizontalmente o bloco inteiro (opcional) */
+    max-width: 1000px; /* Limite a largura para melhor visualização */
+    margin: 30px auto; /* Centraliza o contêiner */
+    padding: 0 20px;
+    flex-wrap: wrap; /* Permite que os itens quebrem em telas menores */
+}
+
+/* Garante que o texto e o botão fiquem agrupados */
+.grupo-texto-bem-vindo {
+    flex: 1; /* Ocupa o espaço que sobrar */
+    min-width: 300px; /* Garante que o texto não fique muito estreito */
+    padding-right: 20px;
+}
+
+/* Estilo para a imagem principal */
+.imagem-principal {
+    max-width: 400px; /* Limita o tamanho da imagem (ajuste se necessário) */
+    height: auto;
+    border-radius: 10px;
+    /* Faz a imagem ir para a direita se estivermos usando justify-content: space-between no .container-bem-vindo */
+    order: 2; /* Move a imagem para o final (direita) no layout padrão */
+}
+
+/* Se você quiser a imagem na ESQUERDA e o texto na DIREITA, troque as ordens */
+.imagem-principal-esquerda {
+    max-width: 400px; 
+    height: auto;
+    border-radius: 10px;
+    order: 1; /* Move a imagem para o início (esquerda) */
+}
+
+/* Opcional: Se a tela for pequena, empilha */
+@media (max-width: 768px) {
+    .container-bem-vindo {
+        flex-direction: column; /* Empilha o texto e a imagem */
+    }
+    .grupo-texto-bem-vindo {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+}
+/* --- CSS para a Galeria de Histórias --- */
+
+.galeria-fotos {
+    display: flex; /* Assumindo que você usa flexbox ou grid aqui */
+    justify-content: center;
+    gap: 30px;
+    margin: 30px auto;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.item-historia {
+    text-align: center;
+    flex: 1; /* Permite que o item ocupe 1/3 do espaço disponível */
+    min-width: 200px;
+}
+
+.item-historia img {
+    /* ** CHAVE PARA DIMINUIR O TAMANHO ** */
+    width: 100%; 
+    max-width: 250px; /* Define o tamanho MÁXIMO da imagem */
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 10px; /* Centraliza a imagem dentro do item */
+}
+<div class="container-bem-vindo">
+    
+    <div class="grupo-texto-bem-vindo">
+        
+        <h1>“Brinde com Autenticidade”</h1>
+        
+        <p class="descricao">
+            Cerveja artesanal criada por mulheres que acreditam na força da convivência. Mais que uma bebida, é um convite para celebrar histórias, amizades e experiências que merecem ser compartilhadas com todos.
+        </p>
+
+        <a href="index2.html" class="btn-saiba-mais">Saiba mais</a>
+        
+    </div>
+
+    <img src="rapaiz.007.png" alt="Dois copos de cerveja" class="imagem-principal-esquerda">
+    
+</div>
+<h2>Nossa História</h2>
+/* Estilo para a imagem principal */
+.imagem-principal-esquerda {
+    max-width: 400px; /* <--- ESTE É O VALOR QUE ESTÁ DEIXANDO-A PEQUENA */
+    height: auto;
+    border-radius: 10px;
+    order: 1; 
+}
+/* Ajuste para a imagem principal alinhada à esquerda */
+.imagem-principal-esquerda {
+    max-width: 550px; /* Aumentamos o tamanho máximo aqui */
+    height: auto;
+    border-radius: 10px;
+    order: 1; 
+}
+/* Contêiner que envolve o texto e a imagem */
+.container-bem-vindo {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    max-width: 1200px; /* Aumentar este valor pode dar mais espaço total */
+    margin: 30px auto; 
+    padding: 0 20px;
+    flex-wrap: wrap; 
+}
+/* --- CSS para a Imagem Principal Alinhada à Esquerda --- */
+
+/* Ajuste do Contêiner principal para dar mais espaço */
+.container-bem-vindo {
+    /* Aumentamos para dar mais folga para a imagem e o texto */
+    max-width: 1400px; 
+    margin: 40px auto; 
+    padding: 0 20px;
+    display: flex; /* Mantém o Flexbox */
+    align-items: center; 
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+/* A imagem principal, agora MAIOR */
+.imagem-principal-esquerda {
+    /* NOVO TAMANHO: 750px (Ou use 800px se quiser que seja gigante) */
+    max-width: 750px; 
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    order: 1; 
+}
+
+/* O grupo de texto será um pouco mais estreito */
+.grupo-texto-bem-vindo {
+    flex: 1; 
+    min-width: 300px; /* Garantir que o texto caiba bem */
+    padding-right: 30px;
+    order: 2; 
+}
+/* --- CSS para a Seção "Nossos Produtos" (Garantir Alinhamento à Esquerda) --- */
+
+.container-produtos {
+    display: flex; /* Assumindo que você usa flexbox aqui */
+    justify-content: center;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+    align-items: flex-start;
+}
+
+.coluna-textos {
+    flex: 1; 
+    padding-right: 30px;
+    /* Adicionamos text-align: left para garantir que o texto não esteja centralizado */
+    text-align: left; 
+}
+
+.item-produto {
+    margin-bottom: 20px;
+    padding: 15px;
+    /* Opcional: Adiciona uma borda para visualizar melhor o item */
+    border-left: 4px solid var(--verde-principal);
+}
+
+.item-produto p {
+    margin: 5px 0;
+    /* Opcional: Se o parágrafo estiver centralizando, use esta linha */
+    text-align: left; 
+}/* --- CSS para a Seção "Nossos Produtos" (Garantir Alinhamento à Esquerda) --- */
+
+.container-produtos {
+    display: flex; /* Assumindo que você usa flexbox aqui */
+    justify-content: center;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+    align-items: flex-start;
+}
+
+.coluna-textos {
+    flex: 1; 
+    padding-right: 30px;
+    /* Adicionamos text-align: left para garantir que o texto não esteja centralizado */
+    text-align: left; 
+}
+
+.item-produto {
+    margin-bottom: 20px;
+    padding: 15px;
+    /* Opcional: Adiciona uma borda para visualizar melhor o item */
+    border-left: 4px solid var(--verde-principal);
+}
+
+.item-produto p {
+    margin: 5px 0;
+    /* Opcional: Se o parágrafo estiver centralizando, use esta linha */
+    text-align: left; 
+}
+/* ================================================== */
+/* CSS PARA SEÇÃO INICIAL: IMAGEM GRANDE NA ESQUERDA */
+/* ================================================== */
+
+/* Ajuste do Contêiner principal para dar MUITO espaço (1400px) */
+.container-bem-vindo {
+    max-width: 1400px; 
+    margin: 40px auto; 
+    padding: 0 20px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+/* A imagem principal, agora GIGANTE (900px) */
+.imagem-principal-esquerda {
+    /* ** NOVO TAMANHO MÁXIMO: 900px ** */
+    max-width: 900px; 
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    order: 1; 
+}
+
+/* O grupo de texto se adapta ao espaço restante */
+.grupo-texto-bem-vindo {
+    flex: 1; 
+    min-width: 300px; 
+    padding-right: 30px;
+    order: 2; 
+}
+/* ================================================== */
+/* CSS PARA SEÇÃO DE DESTAQUE CENTRALIZADA (Ajuste) */
+/* ================================================== */
+
+/* Container que centraliza tudo: Garante que o bloco principal esteja no centro da tela */
+.secao-destaque-centralizada {
+    text-align: center; /* Crucial para centralizar elementos de linha (texto e botão) */
+    max-width: 1100px; 
+    margin: 40px auto; /* Centraliza o bloco na página */
+    padding: 0 20px;
+}
+
+/* Centralização do Título Principal */
+.titulo-autenticidade {
+    /* (Se você usou a classe 'titulo-principal-bem-vindo' antes, use ela) */
+    font-size: 2.5em; 
+    margin-bottom: 15px;
+    text-align: center; 
+}
+
+/* Centralização e Limitação da Largura da Descrição */
+.descricao-centralizada {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    /* --- AJUSTE CRUCIAL: Limita o parágrafo a uma largura boa para leitura e o centraliza --- */
+    max-width: 650px; /* <--- Você pode diminuir este valor (ex: 550px) para parecer "mais centralizado" */
+    margin-left: auto; /* Centraliza o parágrafo */
+    margin-right: auto; /* Centraliza o parágrafo */
+}
+
+/* O botão "Saiba mais" deve ser display: inline-block para ser centralizado pelo text-align: center do pai */
+.btn-saiba-mais {
+    display: inline-block;
+}
+/* ================================================== */
+/* CSS PARA SEÇÃO DE DESTAQUE CENTRALIZADA E FLEXÍVEL */
+/* ================================================== */
+
+/* 1. Contêiner Principal: Garante a Centralização na Tela */
+.secao-destaque-flex {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; /* Mantém a centralização dos itens empilhados (celular) */
+    
+    /* Ajuste de Centralização: Diminuímos o max-width para 1200px (estava em 1400px) 
+       ou aumentamos o padding lateral para empurrar o bloco para o centro visual */
+    max-width: 1200px; /* Reduzindo um pouco para garantir que ele não se estique demais */
+    margin: 40px auto; /* Centraliza o bloco na página */
+    padding: 0 40px; /* Aumentamos o padding lateral para 40px */
+}
+
+/* O restante do CSS para o grupo-texto-destaque e imagem-destaque-flex permanece o mesmo. */
+/* --- Atualize esta regra no seu style.css --- */
+
+.grupo-texto-destaque {
+    text-align: center; 
+    max-width: 600px;
+    padding: 0 20px 30px 20px;
+    
+    /* ADICIONA ESPAÇO ABAIXO DO TEXTO E BOTÃO */
+    margin-bottom: 40px; 
+    /* Você pode ajustar 40px para 60px se precisar de mais espaço */
+}
+/* --- Ajuste dentro do @media (min-width: 900px) --- */
+@media (min-width: 900px) {
+    .grupo-texto-destaque {
+        /* ... outras regras ... */
+        text-align: left; /* Garante que o texto e o botão fiquem à esquerda */
+    }
+    
+    /* A descrição já deve estar alinhada à esquerda, mas vamos garantir: */
+    .descricao-centralizada {
+        text-align: left; 
+    }
+}
+/* --- Regra Padrão (Celular) --- */
+.grupo-texto-destaque {
+    text-align: center; /* Centralizado no celular */
+    max-width: 600px; 
+    padding: 0 20px 30px 20px;
+    margin-bottom: 40px; 
+}
+/* --- REGRA ESPECÍFICA PARA O BOTÃO --- */
+
+.btn-saiba-mais {
+    /* Mantém o comportamento de elemento que pode ser alinhado */
+    display: inline-block; 
+    
+    /* Zera margens que possam estar centralizando o botão em layout de bloco */
+    margin-left: 0 !important; 
+    margin-right: auto !important; 
+}
+
+/* --- AJUSTE NA VERSÃO DESKTOP (dentro do @media) --- */
+
+@media (min-width: 900px) {
+    /* Garante que o contêiner pai alinhe tudo à esquerda no desktop */
+    .grupo-texto-destaque {
+        text-align: left !important;
+        /* ... outras regras ... */
+    }
+    
+    /* Garante que o botão use a margem esquerda e não a automática */
+    .btn-saiba-mais {
+        /* Desabilita o alinhamento de bloco centralizado, se estiver sendo aplicado */
+        display: inline-block; 
+        margin-left: 0 !important; 
+    }
+}
+/* --- Regra Padrão (Agora, alinhada à esquerda por padrão) --- */
+
+.grupo-texto-destaque {
+    /* ** AQUI ESTÁ A SOLUÇÃO FINAL PARA O ALINHAMENTO ** */
+    text-align: left !important; /* Força o alinhamento de títulos, textos e botões para a ESQUERDA */
+    
+    max-width: 600px; 
+    padding: 0 20px 30px 20px;
+    margin-bottom: 40px; 
+}
+/* --- Regra do Botão (Garantia de que não centraliza) --- */
+
+.btn-saiba-mais {
+    display: inline-block;
+    /* Adicione estas linhas para garantir que a margem de centralização seja removida */
+    margin-left: 0 !important; 
+    margin-right: auto !important; 
+    
+    /* ... o restante dos seus estilos de botão ... */
+}
+/* --- Regra para Limitar o Tamanho da Imagem dentro de Coluna-Experiencia --- */
+
+.coluna-experiencia img {
+    /* Define a largura máxima para 400px (ajuste este valor se precisar de um tamanho diferente) */
+    max-width: 400px; 
+    /* Garante que a imagem se ajuste à largura máxima, mas não estoure a tela em mobile */
+    width: 100%; 
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px; /* Adiciona um espaço acima da imagem se ela estiver logo após o botão */
+}
+/* --- Atualize esta regra no seu style.css --- */
+
+.coluna-experiencia {
+    flex: 1;               
+    max-width: 450px;      
+    
+    /* Centraliza elementos de texto e botões (inline) */
+    text-align: center !important; 
+    
+    /* Adicione estas margens auto para centralizar o bloco da coluna inteira na tela, se necessário */
+    margin-left: auto;
+    margin-right: auto;
+}
+

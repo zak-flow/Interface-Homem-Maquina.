@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de ihm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* [Seu CSS completo deve vir aqui, incluindo todos os estilos do topo, FAQ e Formulário] */
+        /* Incluindo as regras de alinhamento do topo: */
+        
+        /* 1. RESET BÁSICO */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* 2. TOPO: ALINHAMENTO NAS PONTAS (Logo Malte Esquerda vs. Botão Direita) */
+        .topo-catalogo-container {
+            display: flex;
+            align-items: center; 
+            justify-content: space-between; 
+            width: 100%;
+            padding: 15px 40px; 
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .grupo-esquerda {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .grupo-esquerda img {
+            height: 70px;
+            width: auto;
+        }
+
+        .titulo-malte {
+            color: brown;
+            margin: 0;
+            font-size: 2.2em;
+            font-weight: bold;
+        }
+
+        /* Estilo do Botão Voltar (Direita) */
+        .btn-voltar-topo {
+            background-color: black;
+            color: white;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-voltar-topo:hover {
+            background-color: #333;
+        }
+        
+        /* [INÍCIO DOS ESTILOS DO FAQ, FORMULÁRIO E SEGURANÇA] */
+
+        /* ESTILOS DO FAQ */
+        .faq-container { 
+            max-width: 900px;
+            margin: 40px auto; 
+            text-align: left;
+            padding: 0 20px;
+        }
+
+        .titulo-faq {
+            text-align: left;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitulo-faq {
+            color: brown;
+            text-align: left;
+            font-size: 1.1em;
+            margin-bottom: 40px;
+        }
+
+        .bloco-perguntas p {
+            margin-bottom: 25px; 
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .fale-comigo-titulo {
+            text-align: left;
+            font-size: 1.8em;
+            margin-top: 50px;
+            color: black;
+        }
+
+        /* ESTILOS DO FORMULÁRIO */
+        .container-formulario {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        .grupo-campo {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .grupo-campo label {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        .grupo-campo input[type="text"],
+        .grupo-campo input[type="email"],
+        .grupo-campo textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .grupo-campo textarea {
+            resize: vertical;
+        }
+
+        .btn-enviar {
+            background-color: black;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            width: 100%;
+        }
+
+        .btn-enviar:hover {
+            background-color: #333;
+        }
+
+        /* ESTILOS DOS ÍCONES DE SEGURANÇA */
+        .icones-seguranca {
+            text-align: center;
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+        }
+
+        .icones-seguranca p {
+            font-size: 0.9em;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .icone-pequeno {
+            font-size: 1.2em;
+            color: #008000;
+            margin: 0 5px;
+        }
+
+        .fa-cc-visa, .fa-cc-mastercard {
+            color: #333;
+        }
+
+        /* [FIM DOS ESTILOS] */
+
+    </style>
+</head>
+<body>
+
+<div class="topo-catalogo-container">
+    <div class="grupo-esquerda">
+        <img src="albio.png" alt="Logo Cervejaria">
+        <h1 class="titulo-malte">Malte</h1>
+    </div>
+    
+    <a href="index.html" class="btn-voltar-topo">Voltar</a>
+</div>
+
+<div class="faq-container"> 
+    
+    <h1 class="titulo-faq">
+        Perguntas Frequentes <br>
+        (FAQ)
+    </h1>
+
+    <p class="subtitulo-faq"> 
+        "Respostas rápidas para as suas dúvidas <br> 
+        sobre compra, entrega e nossos produtos."
+    </p>
+
+    <div class="bloco-perguntas">
+        
+        <p>
+            <strong>Qual é o prazo de entrega?</strong> O prazo varia conforme a sua região. Para [Sua Cidade/Região], o prazo é de [X] dias úteis. Você pode calcular o prazo exato no checkout.
+        </p>
+
+        <p>
+            <strong>Vocês enviam para todo o Brasil?</strong> Sim, entregamos para todo o território nacional. Todos os pedidos são embalados com segurança especial para transporte de garrafas.
+        </p>
+
+        <p>
+            <strong>Quais são os métodos de pagamento?</strong> Aceitamos Pix, cartão de crédito (em até 3x sem juros) e boleto bancário.
+        </p>
+
+        <p>
+            <strong>Posso montar minha própria caixa de cervejas?</strong> Sim! Utilize a seção "Monte Sua Experiência" no nosso catálogo para escolher os rótulos e acessórios que desejar.
+        </p>
+        
+    </div>
+
+    <h3 class="fale-comigo-titulo">Fale comigo</h3>
+
+</div>
+
+<div class="container-formulario">
+    <form action="" method="post" class="formulario-contato">
+        
+        <div class="grupo-campo">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+
+        <div class="grupo-campo">
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" id="sobrenome" name="sobrenome" required>
+        </div>
+
+        <div class="grupo-campo">
+            <label for="email">Endereço de e-mail</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="grupo-campo">
+            <label for="mensagem">Escreva sua mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+        </div>
+        
+        <button type="submit" class="btn-enviar">Enviar</button>
+        
+    </form>
+    
+    <div class="icones-seguranca">
+        <p>Transação segura e protegida:</p>
+        
+        <i class="fas fa-lock icone-pequeno"></i>
+        
+        <i class="fas fa-shield-alt icone-pequeno"></i>
+        
+        <i class="fab fa-cc-visa icone-pequeno"></i>
+        <i class="fab fa-cc-mastercard icone-pequeno"></i>
+    </div>
+    
+</div>
+
+
+</body>
+</html>

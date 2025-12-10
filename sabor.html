@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malte Cervejaria - Cardápio Interativo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+        /* ======================================= */
+        /* CSS COMPLETO INTEGRADO (Cardápio Interativo) */
+        /* ======================================= */
+        
+        /* Paleta de Cores Verdes */
+        :root {
+            --verde-principal: #38761d; 
+            --verde-claro: #a9d18e;     
+            --cor-fundo-pagina: #f4f4f4;
+            --cor-texto-escuro: #333333;
+            --cor-borda: #dddddd;
+        }
+
+        /* Reset e Layout da Página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--cor-fundo-pagina);
+            box-sizing: border-box; 
+        }
+
+        /* ======================================= */
+        /* TOPO (ESTRUTURA CORRIGIDA E ALINHADA) */
+        /* ======================================= */
+        .topo-catalogo-container {
+            display: flex;
+            align-items: center; 
+            justify-content: space-between; 
+            padding: 15px 40px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #eee;
+        }
+        .grupo-esquerda {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .grupo-esquerda img { height: 60px; }
+        .titulo-malte { color: brown; margin: 0; font-size: 2em; }
+        
+        /* O Botão Voltar deve estar FORA do grupo-esquerda para alinhar corretamente */
+        .btn-voltar-topo {
+            background-color: black; color: white; padding: 8px 20px; 
+            text-decoration: none; border-radius: 5px; font-weight: bold;
+        }
+
+        /* ======================================= */
+        /* CONTAINER PRINCIPAL (Centraliza Cardápio e Formulário) */
+        /* ======================================= */
+        .conteudo-principal-wrapper {
+            max-width: 540px; 
+            margin: 40px auto; 
+            padding: 0 10px;
+        }
+
+        /* ======================================= */
+        /* BLOCO DO CARDÁPIO (TOP E GRID 2X2) */
+        /* ======================================= */
+        .cardapio-container {
+            background-color: #ffffff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            padding: 30px 20px 40px;
+            border-radius: 8px;
+            position: relative; 
+            overflow: hidden;
+            margin-bottom: 30px; 
+        }
+
+        /* Cabeçalho do Cardápio */
+        .cardapio-topo-titulo {
+            text-align: center; margin-bottom: 40px; position: relative; z-index: 2;
+        }
+        .icone-caneca { font-size: 2.5em; color: var(--verde-principal); }
+        .cardapio-topo-titulo h1 { font-size: 1.8em; color: var(--cor-texto-escuro); margin: 10px 0 0; }
+
+        /* Grade de Categorias (Layout 2x2) */
+        .categorias-grid {
+            display: flex; flex-wrap: wrap; justify-content: space-between; 
+            position: relative; z-index: 2;
+        }
+        .categoria-item {
+            flex: 0 0 calc(50% - 10px); padding: 15px 0; text-align: center;
+            border-bottom: 1px solid var(--cor-borda); 
+        }
+        .categoria-item:nth-child(odd) { border-right: 1px solid var(--cor-borda); }
+        .categoria-item:nth-last-child(1), .categoria-item:nth-last-child(2) { border-bottom: none; }
+
+        .categoria-item h2 {
+            font-size: 0.85em; color: var(--verde-principal); margin: 5px 0 10px;
+            font-weight: bold; letter-spacing: 1px;
+        }
+        .texto-cerveja { font-size: 0.9em; color: var(--cor-texto-escuro); line-height: 1.6; display: block;}
+
+        /* ======================================= */
+        /* SELEÇÃO DE PEDIDO (FORMULÁRIO INTERATIVO) */
+        /* ======================================= */
+        .secao-pedido {
+            background-color: #ffffff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            padding: 30px 20px;
+            border-radius: 8px;
+        }
+
+        .titulo-secao-pedido {
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.2em; color: var(--verde-principal);
+            border-bottom: 2px solid var(--verde-principal);
+            padding-bottom: 15px; margin-bottom: 25px;
+        }
+        .titulo-secao-pedido i { margin-right: 10px; font-size: 1.5em; }
+
+        .pergunta-form { margin-bottom: 20px; }
+        .pergunta-form label { display: block; font-weight: bold; color: var(--cor-texto-escuro); margin-bottom: 8px; }
+
+        .input-text, textarea {
+            width: 100%; padding: 10px; border: 1px solid var(--cor-borda);
+            border-radius: 5px; box-sizing: border-box; margin-top: 5px;
+        }
+        .grupo-inline { display: flex; gap: 15px; }
+        .grupo-inline > div { flex: 1; }
+
+        .btn-enviar {
+            width: 100%; background-color: var(--verde-principal); color: white;
+            padding: 15px; border: none; border-radius: 5px; font-size: 1.2em;
+            font-weight: bold; cursor: pointer; transition: background-color 0.3s;
+            margin-top: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="topo-catalogo-container">
+        
+        <div class="grupo-esquerda">
+            <img src="albio.png" alt="Logo Cervejaria">
+            <h1 class="titulo-malte">Malte</h1>
+        </div>
+        
+        <a href="index.html" class="btn-voltar-topo">Voltar</a> 
+    </div>
+    
+    <div class="conteudo-principal-wrapper">
+
+        <div class="cardapio-container">
+            
+            <div class="cardapio-topo-titulo">
+                <i class="fas fa-beer icone-caneca"></i>
+                <h1>Cardápio de Cervejas Artesanais</h1>
+            </div>
+
+            <div class="categorias-grid">
+                
+                <div class="categoria-item">
+                    <i class="fas fa-sun icone-categoria"></i>
+                    <h2>CLARAS & REFRESCANTES</h2>
+                    <span class="texto-cerveja">Nome Cerveja 1 (ABV: 4.5%)</span>
+                    <span class="texto-cerveja">Nome Cerveja 2 (ABV: 4.8%)</span>
+                </div>
+
+                <div class="categoria-item">
+                    <i class="fas fa-leaf icone-categoria"></i>
+                    <h2>ÂMBAR & EQUILIBRADAS</h2>
+                    <span class="texto-cerveja">Nome Cerveja 3 (ABV: 5.2%)</span>
+                    <span class="texto-cerveja">Nome Cerveja 4 (ABV: 5.5%)</span>
+                </div>
+
+                <div class="categoria-item">
+                    <i class="fas fa-coffee icone-categoria"></i>
+                    <h2>ESCURAS & INTENSAS</h2>
+                    <span class="texto-cerveja">Nome Cerveja 5 (ABV: 6.8%)</span>
+                    <span class="texto-cerveja">Nome Cerveja 6 (ABV: 8.0%)</span>
+                </div>
+
+                <div class="categoria-item">
+                    <i class="fas fa-exclamation icone-categoria"></i>
+                    <h2>EXPERIMENTAIS & ÚNICAS</h2>
+                    <span class="texto-cerveja">Nome Cerveja 7 (ABV: 7.2%)</span>
+                    <span class="texto-cerveja">Nome Cerveja 8 (ABV: 9.0%)</span>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="secao-pedido">
+            <form action="#" method="post">
+                <div class="titulo-secao-pedido">
+                    <i class="fas fa-check-circle"></i>
+                    SELEÇÃO DE PEDIDO
+                </div>
+
+                <div class="pergunta-form grupo-inline">
+                    <div>
+                        <label for="nome_cerveja">Cerveja Escolhida</label>
+                        <input type="text" id="nome_cerveja" name="nome_cerveja" class="input-text" placeholder="Ex: Pale Ale, Lager..." required>
+                    </div>
+                    <div>
+                        <label for="volume">Volume/Quantidade</label>
+                        <input type="text" id="volume" name="volume" class="input-text" placeholder="Ex: 500ml, 3 und..." required>
+                    </div>
+                </div>
+
+                <div class="pergunta-form">
+                    <label>Detalhes Adicionais do Pedido</label>
+                    <textarea placeholder="Ex: Sem copo, ou observações específicas sobre o pedido"></textarea>
+                </div>
+                
+                <button type="submit" class="btn-enviar">ENVIAR PEDIDO</button>
+            </form>
+        </div>
+        </div>
+    
+</body>
+</html>
